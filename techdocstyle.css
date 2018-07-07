@@ -5,10 +5,13 @@ body {
   display: grid;
   grid-template-columns: auto auto;
   grid-template-rows: auto;
+  grid-gap: 1em;
 }
 .sidebar {
   grid-column: 1/2;
+  background-color: #ddd;
 }
 .information {
   grid-column: 2/3;
+  background-color: #eee;
 }
