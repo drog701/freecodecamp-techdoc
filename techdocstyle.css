@@ -4,7 +4,7 @@ body {
 
 .grid {
   display: grid;
-  grid-template-columns: auto auto;
+  grid-template-columns: 150px auto;
   grid-template-rows: auto;
   grid-gap: 1em;
 }
@@ -12,6 +12,7 @@ body {
   grid-column: 1/2;
   background-color: #ddd;
 }
+/* This is the right column of the page that contains all of the information, including the sections */ 
 .information {
   grid-column: 2/3;
   background-color: #eee;
