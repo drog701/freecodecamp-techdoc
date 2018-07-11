@@ -21,6 +21,7 @@ body {
 .main-section {
 
 }
+/* The class below is the class given to section within sections */
 .sub-section {
   margin-left: 5%;
 }
