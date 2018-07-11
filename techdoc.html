@@ -53,8 +53,8 @@
               Where to begin? Here's a list of things we'll cover in the order that we'll cover them.<br>
               <ul>
                 <li>display: grid;</li>
-                <li>grid-template-rows and grid-template-columns</li>
-                <li>grid-template-areas and grid: area;</li>
+                <li>grid-template-columns and grid-template-rows</li>
+                <li>grid-template-areas and grid-area;</li>
                 <li>grid: gap;</li>
                 <li>justify-content and align-content</li>
               </ul>
@@ -66,10 +66,31 @@
               way of aligning and adjusting content on whatever website you're building. But what do we do once we've displayed a class as a grid?
               </section>
               <section class="sub-section">
-              <h3>grid-template-rows and grid-template-columns</h3>
+              <h3>grid-template-columns and grid-template-rows</h3>
               <article><code>.grid { <p style="margin-left:1em;">display: grid; <b><br>grid-template-columns: 150px auto; <br>grid-template-rows: auto;</b> <br>grid-gap: 1em;<br>justify-content: stretch;<br>align-content: center;</p>}</code></article><br>
-
+              It's time to start building the grid! Now that a class is being displayed as a grid we can begin to modify the layout of the grid. This is done by "grid-template-columns" and "grid-template-rows". In the example above we find "grid-template-columns: 150px auto;".
+              This is declaring that there will be only two columns, the first of which is only 150px across, and the second is set to "auto", which will automatically fill the rest of the space that is available.<br><br>
+              As you might have guessed, it's the same conecept for grid-template-rows. But it's good to keep in mind that "auto" is only one of your options for measurement, not only in rows, but in columns as well. Some other measurement options include
+              "em", "px", and "fr". The measurement "fr" is new to CSS and it stands for fraction. It basically does the math for you so that you don't have to define your column widths with crazy percents.
             </article>
+            <section class="sub-section">
+            <h3>grid-template-areas and grid-area</h3>
+            <article><code>.grid { <p style="margin-left:1em;">display: grid; <br> grid-template-areas: <br>"header header header"<br>"content content content"<br>"footer footer footer";</p>}</code></article><br>
+            This section won't be quite so straight forward. But don't worry. It's not complicated. The grid-template-areas are built of classes that have a specified grid-area. Let's focus on "header header header" in the example above. This line of code describe's how a grid-area
+            will act along a row, and it also defines that there is 3 columns in the grid. But wait, it gets cooler. If we instead wanted to for some reason move the footer right next to the header, and create a fourth column, we could instead write:<br><br>
+            <article><code>.grid { <p style="margin-left:1em;">display: grid; <br> grid-template-areas: <br>"header header footer footer"<br>"content content content content"</p>}</code></article><br>
+            Crazy, right? More like crazy awesome! The ability to move content around like this on a page is something new to CSS. It makes laying out a page much easier and neater.
+            </section>
+            <section class="sub-section">
+            <h3>grid-gap;</h3>
+            <article><code>.grid { <p style="margin-left:1em;">display: grid; <br>grid-template-columns: 150px auto; <br>grid-template-rows: auto; <b><br>grid-gap: 1em;</b><br>justify-content: stretch;<br>align-content: center;</p>}</code></article><br>
+            So, this section should be short and sweet. The "grid-gap" is exaclty what is sounds like. It's what defines the space between each "child" or "cell" in a grid. Play around with this feature. It'll make your content look clean and organized.
+            </section>
+            <section class="sub-section">
+            <h3>justify-content and align-content</h3>
+            <article><code>.grid { <p style="margin-left:1em;">display: grid; <br>grid-template-columns: 150px auto; <br>grid-template-rows: auto; <br>grid-gap: 1em; <b><br>justify-content: stretch;<br>align-content: center;</b></p>}</code></article><br>
+            Last, but not least, we'll learn how to move the content around within each cell. The attribute "justify-content" refers to the horizontal positioning of the content within a cell, and the attribute "align-content" refers to the vertical position
+            of the content within a cell. There are multiple options for how we might postion the content, such as "center", "start", "end", and "stretch".
             </section>
           </section>
         </div>
