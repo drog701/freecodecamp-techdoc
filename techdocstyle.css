@@ -12,7 +12,7 @@ body {
   grid-column: 1/2;
   background-color: #ddd;
 }
-/* This is the right column of the page that contains all of the information, including the sections */ 
+/* This is the right column of the page that contains all of the information, including the sections */
 .information {
   grid-column: 2/3;
   background-color: #eee;
@@ -20,4 +20,7 @@ body {
 /* The class below defines the attributes of the sections of the document */
 .main-section {
 
+}
+.sub-section {
+  margin-left: 5%;
 }

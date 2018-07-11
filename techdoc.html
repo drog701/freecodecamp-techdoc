@@ -58,14 +58,19 @@
                 <li>grid: gap;</li>
                 <li>justify-content and align-content</li>
               </ul>
-              <section style="margin-left:5%">
+              <section class="sub-section">
               <h3>display: grid;</h3>
-              <article><code>.grid { <p style="margin-left:1em;">display: grid; <br>grid-template-columns: 150px auto; <br>grid-template-rows: auto; <br>grid-gap: 1em;</p>}</code></article><br>
+              <article><code>.grid { <p style="margin-left:1em;"><b>display: grid;</b> <br>grid-template-columns: 150px auto; <br>grid-template-rows: auto; <br>grid-gap: 1em;<br>justify-content: stretch;<br>align-content: center;</p>}</code></article><br>
               The code above is an example of a class being displayed as a grid. The class is of course being designated to a "div" element. What I want to focus on, though, is "display: grid;".
               What this bit of code is doing is allowing you to display information in a two-dimensional grid; in rows and columns. This is great as it creates flexibility and a straight-forward
               way of aligning and adjusting content on whatever website you're building. But what do we do once we've displayed a class as a grid?
               </section>
+              <section class="sub-section">
+              <h3>grid-template-rows and grid-template-columns</h3>
+              <article><code>.grid { <p style="margin-left:1em;">display: grid; <b><br>grid-template-columns: 150px auto; <br>grid-template-rows: auto;</b> <br>grid-gap: 1em;<br>justify-content: stretch;<br>align-content: center;</p>}</code></article><br>
+
             </article>
+            </section>
           </section>
         </div>
         <div class="">
