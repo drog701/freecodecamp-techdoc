@@ -4,18 +4,31 @@ body {
 
 .grid {
   display: grid;
-  grid-template-columns: 150px auto;
+  grid-template-columns: auto auto;
   grid-template-rows: auto;
   grid-gap: 1em;
 }
-.sidebar {
+#navbar {
   grid-column: 1/2;
   background-color: #ddd;
+  top: 0;
+  margin-left: 0px;
+  position: fixed;
+  padding-top: 10px;
 }
+  #navbar header {
+    font-size: 20px;
+  }
+  #navbar ul li {
+    border:1px solid;
+  }
 /* This is the right column of the page that contains all of the information, including the sections */
 .information {
   grid-column: 2/3;
   background-color: #eee;
+  margin-left: 320px;
+  position: absolute;
+  padding-left: 20px;
 }
 /* The class below defines the attributes of the sections of the document */
 .main-section {
@@ -24,4 +37,10 @@ body {
 /* The class below is the class given to section within sections */
 .sub-section {
   margin-left: 5%;
+}
+.li-style {
+  font-size: 20px;
+  list-style-type: none;
+  text-align: left;
+  padding: 4px;
 }
